@@ -6,4 +6,4 @@
 4. Update `APACHE_JENA` variable path in `makefile` 
 
 ## Running the code
-4. `make` 
+1. `make` 

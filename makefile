@@ -1,5 +1,5 @@
 # Modify to different filenames within the same package dir path
-MAIN_JAVA_FILENAME=Sample
+MAIN_JAVA_FILENAME=Example4
 
 #Download from apache jena website:
 # https://jena.apache.org/download/index.cgi

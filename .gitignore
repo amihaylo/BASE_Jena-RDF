@@ -1,0 +1,5 @@
+*~
+target/*
+!target/.git.placeholder
+res/*
+!res/.git.placeholder

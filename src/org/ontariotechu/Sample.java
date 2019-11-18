@@ -6,13 +6,13 @@ import org.slf4j.LoggerFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 
-public class Main{
-    private static final Logger logger = LoggerFactory.getLogger( Main.class );
+public class Sample{
+    private static final Logger logger = LoggerFactory.getLogger( Sample.class );
     
     public static void main(String args[]){
-        logger.info("Main Class!");
+        logger.info("Hello Jena RDF");
 
-        // create an empty Model
+        //Just to ensure that it works
         Model model = ModelFactory.createDefaultModel();
     }
 }

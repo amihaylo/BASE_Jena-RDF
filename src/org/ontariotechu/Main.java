@@ -10,7 +10,7 @@ public class Main{
     private static final Logger logger = LoggerFactory.getLogger( Main.class );
     
     public static void main(String args[]){
-        logger.info("TEST2!");
+        logger.info("Main Class!");
 
         // create an empty Model
         Model model = ModelFactory.createDefaultModel();

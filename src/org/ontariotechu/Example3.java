@@ -16,8 +16,8 @@ public class Example3{
     private static final Logger logger = LoggerFactory.getLogger( Example3.class );
     
     // some definitions
-    static String alexURI = "http://example.org/alex";
-    static String jarekURI = "http://example.org/jarek";
+    static String bilboURI = "http://example.org/bilbo";
+    static String gandalfURI = "http://example.org/gandalf";
     
     public static void main(String args[]){
         logger.info("---------Jena RDF Example3---------");
@@ -26,18 +26,18 @@ public class Example3{
         Model model = ModelFactory.createDefaultModel();
 
         // create a person
-        Resource alex = model.createResource(alexURI, FOAF.Person)
+        Resource bilbo = model.createResource(bilboURI, FOAF.Person)
             .addProperty(FOAF.name, model.createResource()
-                         .addProperty(FOAF.firstName, "Alex")
-                         .addProperty(FOAF.lastName, "Mihaylov"));
+                         .addProperty(FOAF.firstName, "Bilbo")
+                         .addProperty(FOAF.lastName, "Baggins"));
 
-        Resource jarek = model.createResource(jarekURI, FOAF.Person)
+        Resource gandalf = model.createResource(gandalfURI, FOAF.Person)
             .addProperty(FOAF.name, model.createResource()
-                         .addProperty(FOAF.firstName, "Jarek")
-                         .addProperty(FOAF.lastName, "Szlichta"));
+                         .addProperty(FOAF.firstName, "Gandalf")
+                         .addProperty(FOAF.lastName, "TheGrey"));
         
         // //Create a link
-        alex.addProperty(FOAF.knows, jarek);
+        bilbo.addProperty(FOAF.knows, gandalf);
         
         //The language in which to write the model is specified by the lang argument. Predefined values are "RDF/XML", "RDF/XML-ABBREV", "N-TRIPLE", "TURTLE", (and "TTL") and "N3". The default value, represented by null, is "RDF/XML".
         // model.write(System.out, "N-TRIPLE");

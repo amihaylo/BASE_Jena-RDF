@@ -12,7 +12,7 @@ public class Example1{
     private static final Logger logger = LoggerFactory.getLogger( Example1.class );
     
     // some definitions
-    static String alexURI = "http://example.org/alex";
+    static String bilboURI = "http://example.org/bilbo";
     
     public static void main(String args[]){
         logger.info("---------Jena RDF Example1---------");
@@ -21,9 +21,9 @@ public class Example1{
         Model model = ModelFactory.createDefaultModel();
 
         // create a person
-        Resource alex = model.createResource(alexURI, FOAF.Person)
-            .addProperty(FOAF.firstName, "Alex")
-            .addProperty(FOAF.lastName, "Mihaylov");
+        Resource bilbo = model.createResource(bilboURI, FOAF.Person)
+            .addProperty(FOAF.firstName, "Bilbo")
+            .addProperty(FOAF.lastName, "Baggins");
         
 
         //The language in which to write the model is specified by the lang argument. Predefined values are "RDF/XML", "RDF/XML-ABBREV", "N-TRIPLE", "TURTLE", (and "TTL") and "N3". The default value, represented by null, is "RDF/XML".
